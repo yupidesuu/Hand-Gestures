@@ -11,7 +11,7 @@ line_spec = mp_draw.DrawingSpec(color=(0, 255, 0), thickness=2)  # Green for lin
 dot_spec = mp_draw.DrawingSpec(color=(0, 0, 255), thickness=2)  # Red for dots
 
 # Start video capture
-cap = cv2.VideoCapture(0    )
+cap = cv2.VideoCapture(0)
 
 finger_tips = [8, 12, 16, 20]
 thumb_tip = 4
@@ -214,7 +214,7 @@ while True:
     cv2.imshow("Hand Tracking", frame)
 
     # Exit on pressing 'q'
-    if cv2.waitKey(0) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         print("Exiting...")
         break
 
